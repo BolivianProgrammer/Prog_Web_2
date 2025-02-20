@@ -1,0 +1,14 @@
+.nosotros {
+    background-color: rgb(212, 178, 26);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nosotros__imagen {
+    width: 25%;
+    height: 25%;
+    margin: 10px;
+}
