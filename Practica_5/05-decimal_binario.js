@@ -10,4 +10,4 @@ function decimalABinario(decimal) {
 
 const numeroDecimal = 15;
 const numeroBinario = decimalABinario(numeroDecimal);
-console.log(`Decimal: ${numeroDecimal} -> Binary: ${numeroBinario}`);
+console.log(`Decimal: ${numeroDecimal} -> Binario: ${numeroBinario}`);

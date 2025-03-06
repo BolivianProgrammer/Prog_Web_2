@@ -14,5 +14,5 @@ function numMasRepetido(arr) {
     return masFrecuente;
 }
 
-const numbers = [1, 3, 2, 3, 4, 3, 5, 1, 2, 2, 2, 3, 3, 2];
-console.log(numMasRepetido(numbers)); 
+const numeros = [1, 3, 2, 3, 4, 3, 5, 1, 2, 2, 2, 3, 3, 2];
+console.log(numMasRepetido(numeros)); 
