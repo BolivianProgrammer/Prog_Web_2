@@ -1,0 +1,124 @@
+.producto {
+    padding: 3.5rem 2rem;
+    background-color: #F5F5F5;
+}
+
+.producto__titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    color: #003399; 
+    margin-bottom: 2.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.producto__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 2rem;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.producto__card {
+    flex: 0 1 550px;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.producto__card:hover {
+    transform: translateY(-5px);
+}
+
+.producto__imagen {
+    height: 300px;
+    width: 100%;
+    max-width: 550px;
+    display: block;
+    margin: 0 auto 1.5rem;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.producto__imagen:hover {
+    transform: scale(1.05);
+}
+
+.producto__card__titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #4682B4; 
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.producto__card__precio {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFD700; 
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.producto__card__desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.producto__card__boton {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    background-color: #FFD700; 
+    border: 3px solid #FFD700; 
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 0 50px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.producto__card__boton:hover {
+    background-color: #FF4040; 
+    border-color: #FF4040;
+    transform: scale(1.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 1800px) {
+    .producto__card {
+        flex: 0 1 45%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .producto__card {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+    .producto__imagen {
+        width: 100%;
+        height: auto;
+    }
+    .producto__titulo {
+        font-size: 1.5rem;
+    }
+}
