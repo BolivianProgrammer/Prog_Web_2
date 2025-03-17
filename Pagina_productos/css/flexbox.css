@@ -1,0 +1,135 @@
+.headerPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerPrincipal-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.contenidoPrincipal-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.contenidoPrincipal-productos-link {
+    flex: 1 1 calc(25% - 15px);
+    min-width: 200px;
+}
+
+.videoSobre .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.videoSobre-video {
+    flex: 1 1 50%;
+    max-width: 560px;
+}
+
+.videoSobre-sobre {
+    flex: 1 1 40%;
+}
+
+.videoSobre-sobre-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-navMap-list > div {
+    flex: 1 1 calc(25% - 20px);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 200px;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+@media (max-width: 1000px) {
+    .videoSobre .container {
+        flex-direction: column;
+    }
+
+    .videoSobre-video {
+        flex: 1 1 100%;
+    }
+
+    .videoSobre-sobre {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerPrincipal .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .headerPrincipal-nav {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .contenidoPrincipal-productos-link {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .rodapePrincipal-navMap-list > div {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-contatoForm-submit {
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenidoPrincipal-productos-link {
+        flex: 1 1 100%;
+    }
+
+    .rodapePrincipal-navMap-list > div {
+        flex: 1 1 100%;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}

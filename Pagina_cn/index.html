@@ -11,31 +11,34 @@
     <link rel="stylesheet" href="assets/css/elemento.css">
     <link rel="stylesheet" href="assets/css/mensaje.css">
     <link rel="stylesheet" href="assets/css/nosotros.css">
+    <link rel="stylesheet" href="assets/css/producto.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
     <header class="head">
-        <img class="head__logo" src="assets/img/logo.png" alt="logo">
-        <h1 class="head__titulo">WELCOME TO CARTOON NETWORK</h1>
+        <img class="head__logo" src="assets/img/logo.png" alt="Cartoon Network Logo">
+        <h1 class="head__titulo">Bienvenidos a Cartoon Network</h1>
         <nav class="head__nav">
-            <a class="head__link" href="#">INICIO</a>
-            <a class="head__link" href="#mensaje">PERSONAJES</a>
-            <a class="head__link" href="#">PRODUCTOS</a>
-            <a class="head__link" href="#">CONTACTOS</a>
-            <a class="head__link" href="#footer">PIE DE PAGINA</a>
+            <a class="head__link" href="#Inicio">Inicio</a>
+            <a class="head__link" href="#Historia">Historia</a>
+            <a class="head__link" href="#Personajes">Personajes</a>
+            <a class="head__link" href="#Shows">Shows</a>
+            <a class="head__link" href="#Productos">Productos</a>
+            <a class="head__link" href="#Footer">Pie de Pagina</a>
         </nav>
     </header>
     <main>
-        <section class="pagina">
+        <section class="pagina" id="Inicio">
             <h1 class="pagina__titulo"> Introduccion a Cartoon Network</h1>
             <p class="pagina__desc">Un poco sobre nuestros shows</p>
             <a class="pagina__boton" href="#"> Ir a nuestra historia</a>
         </section>
-        <section class="elemento">
+        <section class="elemento" id="Historia">
             <h2 class="elemento__titulo">Nuestra historia: </h2>
-            <p class="elemento_texto" id="elemento_texto">Cartoon Network, tambien conocido con sus siglas CN, es un canal de televisión por suscripción estadounidense infantil centrado en series de animación para niños y adolescentes. Fue lanzado el 1 de octubre de 1992 por Betty Cohen y es propiedad de The Cartoon Network, Inc., subsidiaria de Warner Bros. Discovery Networks, una división de Warner Bros. Discovery.
+            <p class="elemento__texto" id="elemento_texto">Cartoon Network, tambien conocido con sus siglas CN, es un canal de televisión por suscripción estadounidense infantil centrado en series de animación para niños y adolescentes. Fue lanzado el 1 de octubre de 1992 por Betty Cohen y es propiedad de The Cartoon Network, Inc., subsidiaria de Warner Bros. Discovery Networks, una división de Warner Bros. Discovery.
             Basa su programación en los géneros de acción y comedia, y comparte horario de programación con el canal Adult Swim desde las 5:00 p.m. hasta las 6:00 a. m. (horario de la costa este de los Estados Unidos). Ambos espacios son diferenciados como canales independientes en las estadísticas de audiencia de la empresa Nielsen Holdings para su posterior estudio y análisis.</p>
         </section>
-        <section class="mensaje" id="mensaje">
+        <section class="mensaje" id="Personajes">
             <h1 class="mensaje_texto">Un poco sobre nuestros personajes iconicos: </h1>
             <ul class="mensaje__lista">
                 <li class="mensaje__item mensaje__logo">
@@ -58,68 +61,86 @@
 
         </section>
 
-        <section class="nosotros">
-            <div class="nosotros__conteiner"></div>
-            <img class="nosotros__imagen" src="assets/img/perfil1.jpg" alt="img">
+        <section class="nosotros" id="Shows">
+            <h2 class="nosotros__titulo">Nuestros Shows Más Famosos</h2>
+            <ul class="nosotros__lista">
+                <li class="nosotros__item">
+                    <img class="nosotros__imagen" src="assets/img/horaDeAventura.png" alt="Adventure Time">
+                    <h3 class="nosotros__item__titulo">Hora de Aventura</h3>
+                    <p class="nosotros__item__texto">Sigue las epicas aventuras de Finn y Jake en la mágica Tierra de Ooo.</p>
+                </li>
+                <li class="nosotros__item">
+                    <img class="nosotros__imagen" src="assets/img/increibleG.jpg" alt="The Amazing World of Gumball">
+                    <h3 class="nosotros__item__titulo">El Increíble Mundo de Gumball</h3>
+                    <p class="nosotros__item__texto">Las locuras de Gumball, un gato azul, y su familia en Elmore.</p>
+                </li>
+                <li class="nosotros__item">
+                    <img class="nosotros__imagen" src="assets/img/regularShow.jpg" alt="Regular Show">
+                    <h3 class="nosotros__item__titulo">Un Show Mas</h3>
+                    <p class="nosotros__item__texto">Mordecai y Rigby convierten tareas simples en caos surrealista.</p>
+                </li>
+                <li class="nosotros__item">
+                    <img class="nosotros__imagen" src="assets/img/stevenUniverse.jpg" alt="Steven Universe">
+                    <h3 class="nosotros__item__titulo">Steven Universe</h3>
+                    <p class="nosotros__item__texto">Steven y las Gemas de Cristal protegen el mundo con amor y musica.</p>
+                </li>
+            </ul>
         </section>
 
-        <section class="producto">
-            <h2 class="producto__titulo"> Productos</h2>
-            <ul class="producto__card">
-                <li class="card card--prod1">
-                    <h3 class="card__titulo">Producto1</h3>
-                    <article class="card__contenido">
-                        <p class="card__precio">0004</p>
-                        <p class="card__desc">descripcion del producto</p>
-                        <a class="card__boton" href="#">texto boton</a>
+        <section class="producto" id="Productos">
+            <h2 class="producto__titulo">Nuestros Productos</h2>
+            <ul class="producto__lista">
+                <li class="producto__card">
+                    <img class="producto__imagen" src="assets/img/prod1.jpg" alt="Funko Pop Dexter's Laboratory">
+                    <h3 class="producto__card__titulo">Funko Pop - Jake</h3>
+                    <article class="producto__card__contenido">
+                        <p class="producto__card__precio">$19.99</p>
+                        <p class="producto__card__desc">Figura coleccionable de Jake, el perro mágico y mejor amigo de Finn en Hora de Aventura, conocido por su capacidad de cambiar de forma y tamaño.</p>
+                        <a class="producto__card__boton" href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li class="card card--prod1">
-                    <h3 class="card__titulo">Producto1</h3>
-                    <article class="card__contenido">
-                        <p class="card__precio">0004</p>
-                        <p class="card__desc">descripcion del producto</p>
-                        <a class="card__boton" href="#">texto boton</a>
+                <li class="producto__card">
+                    <img class="producto__imagen" src="assets/img/prod2.jpg" alt="Funko Pop Finn">
+                    <h3 class="producto__card__titulo">Funko Pop - Dexter</h3>
+                    <article class="producto__card__contenido">
+                        <p class="producto__card__precio">$19.99</p>
+                        <p class="producto__card__desc">Figura coleccionable de Dexter, el genio de Dexter's Laboratory, con detalles vibrantes y diseño icónico.</p>
+                        <a class="producto__card__boton" href="#">Agregar al carrito</a>
                     </article>
                 </li>
-                <li class="card card--prod1">
-                    <h3 class="card__titulo">Producto1</h3>
-                    <article class="card__contenido">
-                        <p class="card__precio">0004</p>
-                        <p class="card__desc">descripcion del producto</p>
-                        <a class="card__boton" href="#">texto boton</a>
+                <li class="producto__card">
+                    <img class="producto__imagen" src="assets/img/prod3.jpg" alt="Funko Pop Gumball">
+                    <h3 class="producto__card__titulo">Funko Pop - Fuzzy Lumpkins</h3>
+                    <article class="producto__card__contenido">
+                        <p class="producto__card__precio">$19.99</p>
+                        <p class="producto__card__desc">Figura coleccionable de Fuzzy Lumpkins de Las Chicas Superpoderosas, con su caracteristico aspecto y actitud gruñona.</p>
+                        <a class="producto__card__boton" href="#">Agregar al carrito</a>
                     </article>
                 </li>
             </ul>
         </section>
-        <section class="contacto">
-            <h2 class="contacto__titulo"> Contacto</h2>
-            <div class="contacto__contenido">
-                <p class="contacto__descripcion">descripcion de contacto</p>
-                <article>
-
-                </article>
-
-            </div>
-            <img src="assets/img/prod3.jpg" alt="img">
+        <footer class="footer" id="Footer">
+            <img class="footer__logo" src="assets/img/logo.png" alt="Cartoon Network Logo">
             
-        </section>
-    </main>
+            <section class="contacto">
+                <h2 class="contacto__titulo">Contactanos!</h2>
+                <div class="contacto__contenido">
+                    <p class="contacto__descripcion">Cualquier duda o pregunta, no duden en contactarse con nosotros al correo CartoonNetwork@gmail.com
 
-    <footer class="footer" id="footer">
-        <img class="footer" src="assets/img/logo.png" alt="logo">
-        <nav class="footer__nav">
-            <ul>
-                <li class="footer__link"><a href="#">inicio</a></li>
-                <li class="footer__link"><a href="#">portada</a></li>
-                <li class="footer__link"><a href="#">seccion1</a></li>
-                <li class="footer__link"><a href="#">seccion2</a></li>
-                <li class="footer__link"><a href="#">seccion3</a></li>
-            </ul>
-             
-        </nav>
-
-    </footer>
+                    </p>
+                </div>
+            </section>
+        
+            <nav class="footer__nav">
+                <ul class="footer__nav__lista">
+                    <li class="footer__link"><a href="#Inicio">Inicio</a></li>
+                    <li class="footer__link"><a href="#Historia">Historia</a></li>
+                    <li class="footer__link"><a href="#Personajes">Personajes</a></li>
+                    <li class="footer__link"><a href="#Shows">Shows</a></li>
+                    <li class="footer__link"><a href="#Footer">Productos</a></li>
+                </ul>
+            </nav>
+        </footer>
     
 </body>
 </html>
