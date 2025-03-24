@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/mensaje.css">
     <link rel="stylesheet" href="assets/css/nosotros.css">
     <link rel="stylesheet" href="assets/css/producto.css">
+    <link rel="stylesheet" href="assets/css/carrito.css">
     <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
@@ -24,6 +25,7 @@
             <a class="head__link" href="#Personajes">Personajes</a>
             <a class="head__link" href="#Shows">Shows</a>
             <a class="head__link" href="#Productos">Productos</a>
+            <a class ="head__link" href="#Carrito">Carrito</a>
             <a class="head__link" href="#Footer">Pie de Pagina</a>
         </nav>
     </header>
@@ -90,35 +92,50 @@
         <section class="producto" id="Productos">
             <h2 class="producto__titulo">Nuestros Productos</h2>
             <ul class="producto__lista">
-                <li class="producto__card">
-                    <img class="producto__imagen" src="assets/img/prod1.jpg" alt="Funko Pop Dexter's Laboratory">
-                    <h3 class="producto__card__titulo">Funko Pop - Jake</h3>
-                    <article class="producto__card__contenido">
-                        <p class="producto__card__precio">$19.99</p>
-                        <p class="producto__card__desc">Figura coleccionable de Jake, el perro mágico y mejor amigo de Finn en Hora de Aventura, conocido por su capacidad de cambiar de forma y tamaño.</p>
-                        <a class="producto__card__boton" href="#">Agregar al carrito</a>
-                    </article>
-                </li>
-                <li class="producto__card">
-                    <img class="producto__imagen" src="assets/img/prod2.jpg" alt="Funko Pop Finn">
-                    <h3 class="producto__card__titulo">Funko Pop - Dexter</h3>
-                    <article class="producto__card__contenido">
-                        <p class="producto__card__precio">$19.99</p>
-                        <p class="producto__card__desc">Figura coleccionable de Dexter, el genio de Dexter's Laboratory, con detalles vibrantes y diseño icónico.</p>
-                        <a class="producto__card__boton" href="#">Agregar al carrito</a>
-                    </article>
-                </li>
-                <li class="producto__card">
-                    <img class="producto__imagen" src="assets/img/prod3.jpg" alt="Funko Pop Gumball">
-                    <h3 class="producto__card__titulo">Funko Pop - Fuzzy Lumpkins</h3>
-                    <article class="producto__card__contenido">
-                        <p class="producto__card__precio">$19.99</p>
-                        <p class="producto__card__desc">Figura coleccionable de Fuzzy Lumpkins de Las Chicas Superpoderosas, con su caracteristico aspecto y actitud gruñona.</p>
-                        <a class="producto__card__boton" href="#">Agregar al carrito</a>
-                    </article>
-                </li>
+                <!-- Change the Agregar al carrito links to buttons -->
+        <li class="producto__card">
+            <img class="producto__imagen" src="assets/img/prod1.jpg" alt="Funko Pop Dexter's Laboratory">
+            <h3 class="producto__card__titulo">Funko Pop - Jake</h3>
+            <article class="producto__card__contenido">
+                <p class="producto__card__precio">$19.99</p>
+                <p class="producto__card__desc">Figura coleccionable de Jake, el perro mágico y mejor amigo de Finn en Hora de Aventura, conocido por su capacidad de cambiar de forma y tamaño.</p>
+                <button class="producto__card__boton">Agregar al carrito</button>
+            </article>
+        </li>
+        <li class="producto__card">
+            <img class="producto__imagen" src="assets/img/prod2.jpg" alt="Funko Pop Finn">
+            <h3 class="producto__card__titulo">Funko Pop - Dexter</h3>
+            <article class="producto__card__contenido">
+                <p class="producto__card__precio">$19.99</p>
+                <p class="producto__card__desc">Figura coleccionable de Dexter, el genio de Dexter's Laboratory, con detalles vibrantes y diseño icónico.</p>
+                <button class="producto__card__boton">Agregar al carrito</button>
+            </article>
+        </li>
+        <li class="producto__card">
+            <img class="producto__imagen" src="assets/img/prod3.jpg" alt="Funko Pop Gumball">
+            <h3 class="producto__card__titulo">Funko Pop - Fuzzy Lumpkins</h3>
+            <article class="producto__card__contenido">
+                <p class="producto__card__precio">$19.99</p>
+                <p class="producto__card__desc">Figura coleccionable de Fuzzy Lumpkins de Las Chicas Superpoderosas, con su caracteristico aspecto y actitud gruñona.</p>
+                <button class="producto__card__boton">Agregar al carrito</button>
+            </article>
+        </li>
             </ul>
         </section>
+    <section class="carrito" id="Carrito">
+        <h2 class="carrito__titulo">Tu Carrito de Compras</h2>
+        <div id="carrito-vacio" class="carrito__vacio">
+            <p>Tu carrito está vacío. Agrega productos para verlos aquí.</p>
+        </div>
+        <ul id="carrito-lista" class="carrito__lista">
+            <!-- Los productos se agregarán aquí dinámicamente -->
+        </ul>
+        <div class="carrito__total">
+            <p>Total: <span id="carrito-total">$0.00</span></p>
+            <button id="vaciar-carrito" class="carrito__boton carrito__boton--vaciar">Vaciar carrito</button>
+            <button id="comprar-carrito" class="carrito__boton carrito__boton--comprar">Finalizar compra</button>
+        </div>
+    </section>
         <footer class="footer" id="Footer">
             <img class="footer__logo" src="assets/img/logo.png" alt="Cartoon Network Logo">
             
@@ -137,10 +154,11 @@
                     <li class="footer__link"><a href="#Historia">Historia</a></li>
                     <li class="footer__link"><a href="#Personajes">Personajes</a></li>
                     <li class="footer__link"><a href="#Shows">Shows</a></li>
+                    <li class="footer__link"><a href="#Carrito">Carrito</a></li>
                     <li class="footer__link"><a href="#Footer">Productos</a></li>
                 </ul>
             </nav>
         </footer>
-    
+        <script src="components/carrito.js"></script>
 </body>
 </html>
