@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "titulo": "Post actualizado",
+      "descripcion": "Descripción del post actualizado",
+      "fecha": "2025-03-31T12:22:54.099Z",
+      "id": "def2"
+    },
+    {
+      "titulo": "Post actualizado",
+      "descripcion": "Descripción del post actualizado",
+      "fecha": "2025-03-31T12:22:58.096Z",
+      "id": "3986"
+    },
+    {
+      "titulo": "Post actualizado",
+      "descripcion": "Descripción del post actualizado",
+      "fecha": "2025-03-31T12:23:01.849Z",
+      "id": "c4b9"
+    },
+    {
+      "id": "5d2f",
+      "titulo": "Nuevo post",
+      "descripcion": "Descripción del nuevo post",
+      "fecha": "2025-03-31T12:23:06.031Z"
+    },
+    {
+      "titulo": "Post actualizado",
+      "descripcion": "Descripción del post actualizado",
+      "fecha": "2025-03-31T12:23:09.569Z",
+      "id": "d2e2"
+    },
+    {
+      "titulo": "Post actualizado",
+      "descripcion": "Descripción del post actualizado",
+      "fecha": "2025-03-31T12:23:16.077Z",
+      "id": "bc90"
+    }
+  ]
+}
