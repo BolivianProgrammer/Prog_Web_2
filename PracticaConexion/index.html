@@ -1,0 +1,41 @@
+\PracticaConexion\index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="input-container">
+        <input id="id-input" type="text" placeholder="Id">
+        <input id="titulo-input" type="text" placeholder="Titulo">
+        <input id="descripcion-input" type="text" placeholder="Descripcion">
+        <input id="nombre-input" type="text" placeholder="Nombre">
+        <input id="valorEntero-input" type="text" placeholder="Valor Entero">
+    </div>
+    <div class="button-container">
+        <button id="addButton" onclick="postData()">Agregar Tarea</button>
+        <button id="getButton" onclick="getData()">Obtener Tareas</button>
+    </div>
+    <div class="scroll-container">
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="taskTableBody">
+                <!-- Tasks will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="js/get.js"></script>
+    <script src="js/post.js"></script>
+    <script src="js/put.js"></script>
+    <script src="js/delete.js"></script>
+</body>
+</html>

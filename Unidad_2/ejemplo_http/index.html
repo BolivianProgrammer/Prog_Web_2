@@ -41,7 +41,6 @@
         function showResult(data, isError = false) {
             const statusEl = document.getElementById('status');
             const resultEl = document.getElementById('result');
-            
             if (isError) {
                 statusEl.innerHTML = '<div class="status status-error">Error en la operación</div>';
                 resultEl.textContent = typeof data === 'string' ? data : JSON.stringify(data, null, 2);

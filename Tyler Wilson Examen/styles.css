@@ -1,0 +1,54 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(62, 161, 219, 1) 21.2%,
+      rgba(93, 52, 236, 1) 92.2%
+    );
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;   
+    margin: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(62, 161, 219, 1) 11.2%,
+      rgba(93, 52, 236, 1) 100.2%
+    );
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+input {
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    width: 100px;
+    color: black;
+    width: 200px;
+}
+
+.tachado { text-decoration: line-through; }
+
+
+
+
+
+

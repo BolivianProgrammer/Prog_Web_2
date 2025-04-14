@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": "def2",
+      "titulo": "Post actualizado",
+      "descripcion": "Descripción del post actualizado",
+      "fecha": "2025-03-31T12:22:54.099Z",
+      "nombre": "Tyler Yeims",
+      "valor entero": 1234567890,
+      "completed": false
+    },
+    {
+      "id": "12",
+      "titulo": "lsla",
+      "descripcion": "ndfgn",
+      "fecha": "2025-04-10",
+      "nombre": "vnfdjgnfk",
+      "valorEntero": "10",
+      "completed": true
+    }
+  ]
+}
